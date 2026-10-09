@@ -12,14 +12,14 @@ print(second_box)
 
 print("\n--------------------------------\n")
 
-#---- örnek 1 ----
+# ---- örnek 1 ----
 base_score: int = 500
 current_score: int = base_score
-print(base_score is current_score) 
+print(base_score is current_score)
 
 base_score = base_score + 50
 
-print(base_score is current_score) 
+print(base_score is current_score)
 print(base_score)
 print(current_score)
 print(id(base_score))
