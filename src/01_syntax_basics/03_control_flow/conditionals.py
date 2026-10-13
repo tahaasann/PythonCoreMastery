@@ -1,14 +1,13 @@
-"""
-Koşullu Mantık (if, elif, else):
-- Koşullu ifadeler, mantıksal şartların doğruluğuna göre kodun farklı yollardan akmasını sağlayan mekanik karar yapılarıdır.
+# Koşullu Mantık (if, elif, else):
+# - Koşullu ifadeler, mantıksal şartların doğruluğuna göre kodun farklı yollardan akmasını sağlayan mekanik karar yapılarıdır.
 
-Mekanizması:
-1. "if" ifadesi verilen mantıksal önermenin "True" olup olmadığını denetler.
-2. Şart sağlanmazsa sonraki "elif" bloklarına sırayla bakılır.
-3. Hiçbir şart sağlanmazsa en sondaki "else" bloğu otomatik çalışır.
-4. Boole mantığında "and" iki şartın da varlığını, "or" ise en az bir şartı arar.
-5. Python'da dört boşlukluk girintiler kodun hangi bloğa ait olduğunu belirler.
-"""
+# Mekanizması:
+# 1. "if" ifadesi verilen mantıksal önermenin "True" olup olmadığını denetler.
+# 2. Şart sağlanmazsa sonraki "elif" bloklarına sırayla bakılır.
+# 3. Hiçbir şart sağlanmazsa en sondaki "else" bloğu otomatik çalışır.
+# 4. Boole mantığında "and" iki şartın da varlığını, "or" ise en az bir şartı arar.
+# 5. Python'da dört boşlukluk girintiler kodun hangi bloğa ait olduğunu belirler.
+
 
 # Durum 1: Birbirine bağlı hiyerarşik karar yapısı
 user_role: str = "admin"

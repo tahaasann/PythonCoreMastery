@@ -1,14 +1,13 @@
-"""
-Loops (Döngüler):
-- Döngüler, belirli bir kod bloğunu bir veri koleksiyonu üzerinde veya bir koşul sürdükçe tekrarlayan mekanizmalardır.
+# Loops (Döngüler):
+# - Döngüler, belirli bir kod bloğunu bir veri koleksiyonu üzerinde veya bir koşul sürdükçe tekrarlayan mekanizmalardır.
 
-Mekanizması:
-1. "for" döngüsü bir koleksiyonun her elemanını sırasıyla tek tek ziyaret eder.
-2. "while" döngüsü tanımlanan mantıksal şart True olduğu sürece çalışmayı sürdürür.
-3. "break" ifadesi döngü çalışmasını anında durdurur ve bloktan dışarı çıkar.
-4. "continue" ifadesi mevcut turu derhal atlar ve bir sonraki tura geçer.
-5. Koşulu güncellenmeyen "while" döngüleri sonsuz döngü oluşurarak programı kilitler.
-"""
+# Mekanizması:
+# 1. "for" döngüsü bir koleksiyonun her elemanını sırasıyla tek tek ziyaret eder.
+# 2. "while" döngüsü tanımlanan mantıksal şart True olduğu sürece çalışmayı sürdürür.
+# 3. "break" ifadesi döngü çalışmasını anında durdurur ve bloktan dışarı çıkar.
+# 4. "continue" ifadesi mevcut turu derhal atlar ve bir sonraki tura geçer.
+# 5. Koşulu güncellenmeyen "while" döngüleri sonsuz döngü oluşurarak programı kilitler.
+
 
 # Durum 1: for ve break ile kontrollü gezinme
 numbers: list[int] = [1, 2, 3, 4, 5]
