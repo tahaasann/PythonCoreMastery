@@ -15,7 +15,7 @@ Cevabım: products listesinde 3 tane öğe vardır ve sırayla green ballet flat
 Önemli: iyi veri düzeni: Python listeleri farklı türleri bir arada tutabilir. Ancak bir ürün fiyatları listesinde aynı türden değerleri saklamak, listeyi anlamayı ve işlemeyi kolaylaştırır.
 """
 
-#----------------------
+# ----------------------
 
 r"""
 2. indeks ve öğe sayısı:
@@ -24,10 +24,10 @@ Listedeki konumlara indeks denir. Python indeksleri 0'dan başlatır. Üç öğe
 
 products = ["green ballet flat", "black boot", "white sneaker"]
 
-print(products[0]) # green ballet flat
-print(products[1]) # black boot
-print(products[-1]) # - en sondan başlayarak tarar. bundan dolayı white sneaker
-print(len(products)) # 3 -> len() listenin öğe sayısını verir. 
+print(products[0])  # green ballet flat
+print(products[1])  # black boot
+print(products[-1])  # - en sondan başlayarak tarar. bundan dolayı white sneaker
+print(len(products))  # 3 -> len() listenin öğe sayısını verir.
 
 r"""
 Terminal çıktısı:
@@ -46,13 +46,13 @@ Tahmin et: Dört öğeli bir listede son öğenin indeksi kaçtır? `len(product
 Cevabım: Son öğenin indeksi 3'tür. Çünkü indeksler 0'dan başlar. len(products) 4 döndürür.
 """
 
-#----------------------
+# ----------------------
 
 r"""
 3. Öğeyi güncelle ve yeni öğe ekle
 Liseler değiştirilebilir (mutable). Mevcut öğreyi indeks üzerinden değiştirilebilir, '.append()' ile sona yeni öğe ekleyebilirsin.
 """
-products = ["green ballet flat", "black root"]
+products = ["green ballet flat", "black boot"]
 products[1] = "black ankle boot"
 products.append("white sneaker")
 
@@ -98,7 +98,7 @@ r"""
 4. İki ad, tek liste
 Değişkenler kutu değildir; nesnelere verilen adlardır. Bir listeyi başka ada atamak, yeni bir liste oluşturmaz. İki ad aynı liste nesnesine bağlanır.
 """
-products = ["green ballet flat", "black root"]
+products = ["green ballet flat", "black boot"]
 shared_products = products
 
 shared_products.append("white sneaker")
@@ -108,8 +108,8 @@ print(products is shared_products)
 r"""
 Terminal çıktısı:
 PS C:\Users\tahaa\Desktop\python-core-mastery> python src/01_syntax_basics/02_data_structures/product_catalog.py
-['green ballet flat', 'black root', 'white sneaker']
-['green ballet flat', 'black root', 'white sneaker']
+['green ballet flat', 'black boot', 'white sneaker']
+['green ballet flat', 'black boot', 'white sneaker']
 True
 
 iki ad da aynı liste nesnesini gösterir. Bu yüzden bir adla yapılan değişiklik, diğer ad üzerinden de görülür.
@@ -123,8 +123,8 @@ print(products)
 print(independent_products)
 r"""
 PS C:\Users\tahaa\Desktop\python-core-mastery> python src/01_syntax_basics/02_data_structures/product_catalog.py
-['green ballet flat', 'black root', 'white sneaker']
-['green ballet flat', 'black root', 'white sneaker', 'red sandal']
+['green ballet flat', 'black boot', 'white sneaker']
+['green ballet flat', 'black boot', 'white sneaker', 'red sandal']
 
 'copy()' yeni bir liste oluşturur. Bu örnekte öğeler metin olduğu için sonradan eklene "red sandal" yalnızca kopyada bulunur.
 """
@@ -135,7 +135,7 @@ r"""
 5. Listeyi döngüyle tara
 'for' döngüsü listedeki değerleri sırayla verir. Değerleri kullanmak için indeks saymak zorunda değilsin.
 """
-products = ["green ballet flat", "black root", "white sneaker"]
+products = ["green ballet flat", "black boot", "white sneaker"]
 
 for product in products:
     print("Ürün: ", product)
@@ -144,7 +144,7 @@ Terminal çıktısı:
 PS C:\Users\tahaa\Desktop\python-core-mastery> python src/01_syntax_basics/02_data_structures/product_catalog.py
 
 Ürün:  green ballet flat
-Ürün:  black root
+Ürün:  black boot
 Ürün:  white sneaker
 
 Burada 'product' her turda listedeki sıradaki metni alır. Döngü, liste bitince sona erer.
@@ -194,15 +194,15 @@ Kopyanın son öğesi: navy shoe
 """
 
 products.append("blue flat")
-# ilk listenin sonuna "blue flat" ı eğer döngünden sonra eklersem döngü yeni ürünü yazdırmaz. 
-# döngüden önce yazdırırsam ekler. 
+# ilk listenin sonuna "blue flat" ı eğer döngünden sonra eklersem döngü yeni ürünü yazdırmaz.
+# döngüden önce yazdırırsam ekler.
 # çünkü pythonda kodlar yukarıdan aşağıya doğru çalışır, döngü çalıştıktan sonra sonraki ürünü bilmez.
 
 # products is shared products True döner diye tahmin ediyorum. Çünkü iki isim de aynı liste nesnesini tutar.
 # Ama eğer sorulan soru products = shared products satırı yazmadan önce yapılacak bir kontrolse False döner. Çünkü daha önce shared products diye bir liste tanımlamamıştık.
-# Düzeltmek gerekiyor:  shared_products henüz tanımlanmadan products is shared_products çalıştırılsaydı 
-# sonuç False olmazdı. Python shared_products adını bulamadığı için NameError verirdi. 
-# shared_products = products satırından sonra karşılaştırma True olur. 
+# Düzeltmek gerekiyor:  shared_products henüz tanımlanmadan products is shared_products çalıştırılsaydı
+# sonuç False olmazdı. Python shared_products adını bulamadığı için NameError verirdi.
+# shared_products = products satırından sonra karşılaştırma True olur.
 # shared_products = products.copy() kullanılırsa ayrı liste oluşturulduğundan False olur.
 
 r"""
